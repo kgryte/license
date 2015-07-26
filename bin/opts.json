@@ -1,0 +1,21 @@
+{
+	"string": [
+		"template",
+		"holder"
+	],
+	"boolean": [
+		"help",
+		"version"
+	],
+	"alias": {
+		"help": [
+			"h"
+		],
+		"version": [
+			"V"
+		],
+		"template": [
+			"tmpl"
+		]
+	}
+}

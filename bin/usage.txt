@@ -1,0 +1,10 @@
+
+Usage: license [options] [destination]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+  -tmpl  --template [name]     Template name. Default: 'MIT'.
+         --holder              License holder.
+

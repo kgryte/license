@@ -1,0 +1,62 @@
+{
+  "name": "@kgryte/license",
+  "version": "0.0.0",
+  "description": "Creates a LICENSE file.",
+  "author": {
+    "name": "Athan Reines",
+    "email": "kgryte@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Athan Reines",
+      "email": "kgryte@gmail.com"
+    }
+  ],
+  "bin": {
+    "license": "./bin/cli"
+  },
+  "scripts": {
+    "test": "mocha",
+    "test-cov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coverage -- -R spec",
+    "coveralls": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coveralls/coverage --report lcovonly -- -R spec && cat ./reports/coveralls/coverage/lcov.info | coveralls && rm -rf ./reports/coveralls"
+  },
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kgryte/license.git"
+  },
+  "keywords": [
+    "utilities",
+    "utils",
+    "utility",
+    "license",
+    "dotfile",
+    "cli",
+    "mit",
+    "open source"
+  ],
+  "bugs": {
+    "url": "https://github.com/kgryte/license/issues"
+  },
+  "dependencies": {
+    "@kgryte/noop": "^1.0.0",
+    "minimist": "^1.1.2",
+    "mustache": "^2.1.3",
+    "pkginfo": "^0.3.0",
+    "validate.io-contains": "^1.0.0",
+    "validate.io-function": "^1.0.2",
+    "validate.io-object": "^1.0.4",
+    "validate.io-string-primitive": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "3.x.x",
+    "coveralls": "^2.11.1",
+    "istanbul": "^0.3.0",
+    "jshint": "2.x.x",
+    "jshint-stylish": "2.x.x",
+    "mkdirp": "^0.5.1",
+    "mocha": "2.x.x",
+    "proxyquire": "^1.6.0"
+  },
+  "license": "MIT"
+}
