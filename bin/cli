@@ -7,6 +7,7 @@ var fs = require( 'fs' ),
 	path = require( 'path' ),
 	pkginfo = require( 'pkginfo' ),
 	parseArgs = require( 'minimist' ),
+	notifier = require( 'update-notifier' ),
 	opts = require( './opts.json' ),
 	cp = require( './../lib' );
 
@@ -27,6 +28,11 @@ process.stdout.on( 'error', process.exit );
 
 pkg = pkginfo.read( require.main );
 process.title = pkg.package.name;
+
+
+// PACKAGE UPDATES //
+
+notifier( { 'pkg': pkg.package } ).notify();
 
 
 // ARGUMENTS //
